@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+*.lnk
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+
+# Dependencies (if using node modules)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# OS
+.Spotlight-V100
+.Trashes
+ehthumbs.db
