@@ -177,6 +177,17 @@ body {
     font-weight: 500;
 }
 
+/* Subtitle (used in hero) - bigger, bold, and stay on one line */
+.subtitle {
+    font-weight: 800;
+    /* Responsive size: grows with viewport but clamps to sensible limits */
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    color: var(--text-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
