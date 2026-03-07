@@ -116,6 +116,21 @@ body {
     width: 100%;
 }
 
+/* Make any inline link inside the brand visible (overrides text-clip gradient)
+   Keeps styling minimal and consistent with nav layout */
+.nav-brand a.nav-aux {
+    font-size: 0.95rem;
+    margin-left: 12px;
+    text-decoration: underline;
+    color: var(--text-dark);
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
     padding: 8rem 0;
@@ -175,6 +190,31 @@ body {
     background-clip: text;
     max-width: 600px;
     font-weight: 500;
+}
+
+/* Link placed next to the hero subtitle */
+.hero-aux {
+    font-size: 0.95rem;
+    margin-left: 12px;
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: 700;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Subtitle (used in hero) - bigger, bold, and stay on one line */
+.subtitle {
+    font-weight: 800;
+    /* Responsive size: grows with viewport but clamps to sensible limits */
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    color: var(--text-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hero-buttons {
